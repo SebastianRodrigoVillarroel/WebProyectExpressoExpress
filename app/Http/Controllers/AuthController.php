@@ -11,7 +11,7 @@ class AuthController extends Controller
 {
     public function showLoginForm()
     {
-        return view('login');
+        return view('control.login');
     }
 
     public function login(Request $request)
@@ -25,13 +25,12 @@ class AuthController extends Controller
             return back()->withErrors(['email' => 'Datos de inicio de sesión inválidos']);
         }
 
-        $user = Auth::user();
-        return redirect()->intended('/');
+        return redirect()->route('control.index');
     }
 
     public function showRegisterForm()
     {
-        return view('register');
+        return view('control.register');
     }
 
     public function register(Request $request)
@@ -42,12 +41,12 @@ class AuthController extends Controller
             'apellido_materno' => 'required|string|max:255',
             'direccion' => 'required|string|max:255',
             'fecha_nacimiento' => 'required|date',
-            'email' => 'required|string|email|max:255|unique:usuarios',
+            'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:8|confirmed',
             'rol' => 'required|string|in:administrador,empleado,cliente',
         ]);
 
-        $user = User::create([
+        User::create([
             'nombre' => $request->nombre,
             'apellido_paterno' => $request->apellido_paterno,
             'apellido_materno' => $request->apellido_materno,
@@ -58,6 +57,6 @@ class AuthController extends Controller
             'rol' => $request->rol,
         ]);
 
-        return redirect('/login')->with('success', 'Usuario registrado exitosamente');
+        return redirect()->route('control.index')->with('success', 'Usuario registrado exitosamente');
     }
 }

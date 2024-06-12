@@ -11,33 +11,33 @@ body {
     -webkit-font-smoothing: antialiased;
     background-color: #F7F0E3;
     text-align: center;
-   
 }
-h1{
+
+h1 {
     color: brown;
 }
+
 form {
     text-align: center;
-
-
 }
 
 input[type="email"],
 input[type="password"] {
-    width: 350px; 
+    width: 350px;
     height: 50px;
-    padding: 10px; 
+    padding: 10px;
     margin-bottom: 20px;
-    font-size: 18px; 
+    font-size: 18px;
 }
 
-input{
-    width: 350px; 
+input {
+    width: 350px;
     height: 50px;
-    padding: 10px; 
+    padding: 10px;
     margin-bottom: 20px;
-    font-size: 18px; 
+    font-size: 18px;
 }
+
 select {
     width: 380px;
     height: 70px;
@@ -51,12 +51,11 @@ select {
     -webkit-appearance: none; /* For Chrome */
     -moz-appearance: none; /* For Firefox */
     appearance: none; /* For other browsers */
-     background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 5" width="10" height="5"><path fill="%23000" d="M0 0l5 5 5-5H0z"/></svg>');
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 5" width="10" height="5"><path fill="%23000" d="M0 0l5 5 5-5H0z"/></svg>');
     background-repeat: no-repeat;
     background-position-x: 98%;
     background-position-y: 50%;
 }
-
 
 button {
     width: 380px;
@@ -78,71 +77,98 @@ button {
 
 .contentContainer {
     position: relative;
-    margin: 130px auto auto; 
-    padding: 70px ;
+    margin: 130px auto auto;
+    padding: 70px;
     margin-bottom: 200px;
-    border: 10px solid #4d3d3d; 
-    border-radius: 10px; 
+    border: 10px solid #4d3d3d;
+    border-radius: 10px;
     background-color: #c0ae7d;
-    width: 400px; 
+    width: 400px;
     height: 650px;
 }
-.btnSecundario{
-   
-   
+
+.contentContainer2 {
+    position: relative;
+    margin: 130px auto auto;
+    padding: 70px;
+    margin-bottom: 200px;
+    border: 10px solid #4d3d3d;
+    border-radius: 10px;
+    background-color: #c0ae7d;
+    width: 400px;
+    height: 930px;
+}
+
+.btnSecundario {
     background-color: 8A846E;
-
-
-
     color: #001435;
     border: 0.0625rem solid #001435;
 }
 
-   
-.contentContainer2 {
-    position: relative;
-    margin: 130px auto auto; 
-    padding: 70px ;
-    margin-bottom: 200px;
-    border: 10px solid #4d3d3d; 
-    border-radius: 10px; 
-    background-color: #c0ae7d;
-    width: 400px; 
-    height: 930px;
-}
-   
-   
-
-
-
-
-
-
-
-image{
-width: 10px;
-
+/* Nav bar styles */
+nav {
+    background-color: #aa9e96;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+    font-family: "Lobster", cursive;
 }
 
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px;
+    margin-right: 235px;
+}
 
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+ul {
+    list-style-type: none;
+    padding: 0;
+}
 
+ul li {
+    margin: 20px 0;
+}
 
+ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #5a5a5a;
+}
 
+ul li a i {
+    margin-right: 10px;
+}
 
+ul li a:hover {
+    color: #007bff;
+}
 
+footer {
+    background-color: #665e59;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+}
 
+footer p {
+    margin-top: 10px;
+}
 
+.redes {
+    text-align: center;
+}
 
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
 
+.circle-container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 10px;
+}

@@ -74,6 +74,7 @@ button {
     font-weight: 500;
     text-shadow: none;
     text-decoration: none;
+    
 }
 
 .contentContainer {
@@ -84,8 +85,8 @@ button {
     border: 10px solid #4d3d3d; 
     border-radius: 10px; 
     background-color: #c0ae7d;
-    width: 400px; 
-    height: 650px;
+    width: 370px; 
+    height: 350px;
 }
 .btnSecundario{
    

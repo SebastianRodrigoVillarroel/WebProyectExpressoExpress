@@ -7,7 +7,7 @@
         <table class="styled-table">
             <thead>
                 <tr>
-                    <th>id</th>
+                    <th class="hidden-column">id</th>
                     <th>nombre</th>
                     <th>categoría</th>
                     <th>imagen</th>
@@ -19,7 +19,7 @@
             <tbody>
                 @foreach($products as $product)
                     <tr>
-                        <td>{{ $product->id }}</td>
+                        <td class="hidden-column">{{ $product->id }}</td>
                         <td>{{ $product->name }}</td>
                         <td>{{ $product->category }}</td>
                         <td>
@@ -190,6 +190,10 @@
         height: 80px;
         border-radius: 50%;
         margin: 0 10px;
+    }
+
+    .hidden-column {
+        display: none;
     }
 </style>
 
